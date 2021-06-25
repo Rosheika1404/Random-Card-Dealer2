@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  background-color: #0e7e12;
+  box-sizing: border-box;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.card {
+  height: 640px;
+  width: 448px;
+  margin: auto;
+  margin-top: 5px;
+  background-color: white;
+  border-radius: 25px;
+  border: 1px solid black;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card .topNum {
+  position: absolute;
+  top: -5px;
+  left: 20px;
+  font-size: 100px;
+}
+
+.card .top {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  font-size: 100px;
+}
+
+.card .middle {
+text-align: center;
+align-items: center;
+justify-content: center;
+font-size: 150px;
+border: 1px solid black;
+height: 400px;
+width: 240px;
+position: absolute;
+top: 50%;
+left: 50%;
+margin: -200px 0 0 -120px;
+display: flex;
+}
+
+.card .bottom {
+position: absolute;
+bottom: 80px;
+right: 20px;
+font-size: 100px;
+transform: rotate(180deg);
+}
+
+.card .bottomNum {
+position: absolute;
+bottom: -5px;
+right: 20px;
+font-size: 100px;
+transform: rotate(180deg);
+}
