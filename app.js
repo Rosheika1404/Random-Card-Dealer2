@@ -7,14 +7,12 @@ const generateCardValues = () => `${values[getRandomNumber(values.length)]}`;
 
 let value = generateCardValues();
 
-// const suite = ["♥", "♦", "♠", "♣"];
+const suite = ["♥", "♦", "♠", "♣"];
 
-// const getRandomNumber = max => Math.floor(Math.random() * max); // function to generate random number
+const generateCardSuites = () =>
+    `${suite[getRandomNumber(suite.length)]}`;
 
-// const generateCardSuites = () =>
-//     `${suite[getRandomNumber(suite.length)]}`;
-
-// let suit = generateCardSuites()
+let suit = generateCardSuites()
 
 const cardValue = () => {
     document.querySelector(".middle").innerHTML = value;
@@ -24,4 +22,15 @@ const cardValue = () => {
     document.querySelector(".value2").innerHTML = document.querySelector(
         ".middle"
     ).innerHTML;
+
+    document.querySelector(".suite").innerHTML = suit;
+   document.querySelector(".suite2").innerHTML = suit;
+
+   if(suit==="♥"||suit==="♦"){
+       document.querySelector(".suite").style.color = "red";
+       document.querySelector(".suite2").style.color = "red";
+        document.querySelector(".value").style.color = "red";
+         document.querySelector(".middle").style.color = "red";
+          document.querySelector(".value2").style.color = "red";
+   }
 };
